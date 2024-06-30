@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop Website</title>
     <link rel="stylesheet" href="index.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -16,59 +32,107 @@
     <!-- Hero -->
     <section class="hero">
       <h1>Welcome to Lucia Barber Shop</h1>
-      <img src="./logo.jpg" alt="Lucia Barber Shop Logo" />
+      <img src="./logo.png" alt="Lucia Barber Shop Logo" />
     </section>
     <!-- Sub Hero section -->
     <section class="sub-hero">
       <h2>
-        More than just haircut, we're your patner in
+        More than just a haircut, we're your partner in
         <span>crafting a signature look</span> that reflects your unique
-        personalty
+        personality
       </h2>
-      <img src="/female baber.jpg" alt="Lucia Barber baber" />
+      <img src="./barbing.jpeg" alt="Lucia Barber working" />
     </section>
     <!-- Hairstyles -->
     <section id="hairstyles">
       <h2>Hairstyles you need to try in 2024</h2>
       <ul>
         <li>Short Curly Haircut & Low Drop</li>
-        <li>Buzz cut</li>
-        <li>Fade haircut</li>
+        <li>Fade haircut.</li>
         <li>Faux hawk</li>
         <li>Low fade</li>
+        <li>Curly flat Top</li>
+        <li>Buzz Cut With Bread</li>
+        <li>Short Textured</li>
       </ul>
     </section>
     <!-- Pricing -->
     <section id="pricing">
       <h2>Pricing</h2>
-      <table border="1">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Price</th>
-        </tr>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Price</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
-        <td>Adult haircult</td>
-        <td>#1000</td>
-        </tr>
-        <td>Youth haircult</td>
-        <td>#500</td>
-      </tr>
-      <tr>
-        <td>Bread Trim</td>
-        <td>#200</td>
-      </tr>
-
+            <td>Adult haircut</td>
+            <td>#1000</td>
+          </tr>
+          <tr>
+            <td>Youth haircut</td>
+            <td>#800</td>
+          </tr>
+          <tr>
+            <td>Beard Trim</td>
+            <td>#200</td>
+          </tr>
         </tbody>
       </table>
     </section>
     <!-- Media -->
-    <section id="media"></section>
+    <section id="media">
+      <h2>Have fun while we make you beautiful</h2>
+      <h4>Listen to nature</h4>
+      <audio controls>
+        <source src="./audio.ogg" type="audio/ogg" />
+      </audio>
+      <h4>Watch a movie</h4>
+      <video controls>
+        <source src="/video.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </section>
     <!-- About us -->
-    <section id="about-us"></section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Lucia Barber Shop, where style meets expertise. Our skilled
+        barbers are dedicated to providing you with the best haircut experience
+        in town. Come and visit us for a fresh new look and discover what a
+        truly great haircut can do!
+      </p>
+    </section>
     <!-- Contact us -->
-    <section id="contact-us"></section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <h3>
+        Don't wait another minute. Walk in for a cut or schedule your
+        transformation online.
+      </h3>
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <br />
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" />
+        <br />
+        <label for="details">Other Details:</label>
+        <textarea id="details" name="details"></textarea>
+        <br />
+        <button>submit</button>
+      </form>
+      <h3>OR</h3>
+      <p>
+        Chat with us on X (Twitter):
+        <a href="https://x.com/OnyedikachiLuc4">@OnyedikachiLuc4</a>
+      </p>
+      <p>For appointments and inquiries, please reach out to us:</p>
+      <p>Email: info@luciabarbershop.com</p>
+      <p>Phone: +123 456 7890</p>
+    </section>
   </body>
 </html>
